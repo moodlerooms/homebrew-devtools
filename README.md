@@ -7,27 +7,23 @@ This is a Homebrew tap to assist with installing development tools.
 This Homebrew tap requires the following to be installed:
 
 * Install [Homebrew](https://brew.sh).
-* Install [Homebrew Cask](https://caskroom.github.io).  At time of writing, install command is at the end of homepage.
+* Install [Homebrew Cask](https://caskroom.github.io).  At time of writing, install command is at the end of the homepage.
 
 # Installing casks
 
 Use the following commands to install the casks provided by this Homebrew tap:
 
-```bash
     brew tap moodlerooms/devtools
     brew cask install mr-vagrant
     brew cask install mr-virtualbox
-```
 
 # Updating casks
 
 To upgrade installed tools, use the following commands:
 
-```bash
     brew update
     brew cask upgrade mr-vagrant
     brew cask upgrade mr-virtualbox
-```
 
 # Updating this tap
 
@@ -37,6 +33,10 @@ These are instructions for how to update this project's casks.
   * [VirtualBox](https://github.com/caskroom/homebrew-cask/blob/master/Casks/virtualbox.rb)
   * [Vagrant](https://github.com/caskroom/homebrew-cask/blob/master/Casks/vagrant.rb)
 * Navigate the history of each cask to find the correct version.
-* Copy the cask into this project, making the following changes:
+* Use `brew cask edit CASK-NAME` to edit the cask.
+* Re-sync the cask, making the following changes:
   * Rename the cask by prefixing "mr-" to the name.
   * Remove the `appcast` lines (don't care about updates).
+* Can audit modified cask with `brew cask audit CASK-NAME --download`
+* Should be able to run the upgrade process.
+* Once everything looks good and is tested, then `cd` into the tap, commit and push.
