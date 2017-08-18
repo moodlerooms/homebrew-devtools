@@ -19,11 +19,11 @@ Use the following commands to install the casks provided by this Homebrew tap:
 
 # Updating casks
 
-To upgrade installed tools, use the following commands:
+To upgrade installed tools, first halt all virtual machines. Then use the following commands:
 
     brew update
-    brew cask upgrade mr-vagrant
-    brew cask upgrade mr-virtualbox
+    brew cask install --force mr-vagrant
+    brew cask install --force mr-virtualbox
 
 # Updating this tap
 
