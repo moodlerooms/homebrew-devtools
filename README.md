@@ -13,7 +13,7 @@ This Homebrew tap requires the following to be installed:
 
 Use the following commands to install the casks provided by this Homebrew tap:
 
-    brew tap moodlerooms/devtools
+    brew tap blackboard-open-source/devtools
     brew cask install mr-vagrant
     brew cask install mr-virtualbox
 
